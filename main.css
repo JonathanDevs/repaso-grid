@@ -1,11 +1,9 @@
 
 .grid{
     display: grid;
-    grid-template-columns: 33% 33% 33%;
-    /*  indicar las columnas que quieres que se muestren en la pantalla */
-    grid-template-rows: auto 100px;
-    row-gap: 1em;
-    /* Colorar espaciado entre los contenedores */
+    grid-template-columns: repeat(12, 1fr); /*palabra clave para repeter la fraccion equivalente por la cantidad indicada antes de la coma*/
+    
+   
 }
 .grid div{
     background: #ecf0f1;
