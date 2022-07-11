@@ -1,0 +1,16 @@
+
+.grid{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    /*  indicar las columnas que quieres que se muestren en la pantalla */
+    grid-template-rows: auto 100px;
+    row-gap: 1em;
+    /* Colorar espaciado entre los contenedores */
+}
+.grid div{
+    background: #ecf0f1;
+    padding: 1em;
+}
+.grid  div:hover{
+    border: solid 1px #f1c40f;
+}
