@@ -1,14 +1,27 @@
 
 .grid{
     display: grid;
-    grid-template-columns: repeat(12, 1fr); /*palabra clave para repeter la fraccion equivalente por la cantidad indicada antes de la coma*/
+    grid-template-columns: repeat(4, 1fr); /*palabra clave para repeter la fraccion equivalente por la cantidad indicada antes de la coma*/
+    gap: 1em;
+    grid-template-rows: minmax(20px, auto);
     
    
 }
-.grid div{
+.nested-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 100px;
+    gap: 1em;
+}
+.nested-grid >div{
+    border: 1px solid #000;
+    background-color: #f1c40f;
+    padding: 1em;
+}
+.grid >div{
     background: #ecf0f1;
     padding: 1em;
 }
-.grid  div:hover{
+.grid > div:hover{
     border: solid 1px #f1c40f;
 }
