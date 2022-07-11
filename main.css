@@ -8,24 +8,15 @@
     align-items: stretch; /*cuando hablamos de un estilo aplicar en la columna/fila entera debemos aplicar este o justify-items*/
 }
 .element-one{
-    align-self: start;
+    grid-column: 1/4;
+    grid-row: 1/4;
 }
 .element-two{
-    align-self: center;
+    grid-column: 1/2;
 }
 .element-three{
-    align-self: end;
+    grid-column: 2/4;
 }
-.element-four{
-    justify-self: start; /*cuando hablamos de un estilo aplicar en los elementos debemos aplicar este o justify-self:*/
-}
-.element-five{
-    justify-self: center;
-}
-.element-six{
-    justify-self: end;
-}
-
 .grid >div{
     background: #ecf0f1;
     padding: 1em;
